@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Image Viewer" />
+    <meta name="author" content="alvine" />
+    <title> WebDev.com</title>
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style/style.css"/>
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <img src="images/ChatGPT Image May 18, 2025, 05_12_54 PM.png" alt="WebDev.com Logo" class="logo" />
+      <nav class="icon-menu">
+        <a href="index.html" class="icon-link"><i class="fas fa-home"></i></a>
+        <a href="my services.html" class="icon-link"><i class="fas fa-briefcase"></i></a>
+        <a href="mailto:yourname@example.com" class="icon-link" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="profile.html" class="icon-link"><i class="fas fa-user"></i></a>
+      </nav>
+    </div>
+    <div class="text-overlay">
+      <h1 class="heading"><span style="text-decoration: underline; padding-bottom: 15px; border-bottom: 10px;display: inline-block; text-underline-offset: 10px; color: red;/">H</span>ello,</h1> 
+      <h1>I'm Alvine <span class="vertical-line"></span></h1>
+      <p>A  freelance  front-end web designer and a developer  located  in  Nairobi, Kenya.</p> 
+      <p>I specialize in creating responsive, user-friendly websites for businesses and personal needs.</p>
+      <p>I am dedicated to bring your ideas to life with seamless design and clean code. </p>
+      <p>Whether you are looking to build a new website or improve an existing one, 
+        <p>I am here to deliver innovative solutions tailored to your needs.</p>
+
+      <p class="spaced-last">
+        Let’s build something great together.
+      </p> 
+      <a href="portfolio.html">
+        <button class="portfolio-btn">SEE PORTFOLIO</button>
+        </a>
+        </div>
+        <img src="images/alvo.2.png" alt="img" />
+        <script>
+        const toggle = document.getElementById("searchToggle");
+        const menu = document.getElementById("dropdownMenu");
+
+        toggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          menu.style.display = menu.style.display === "block" ? "none" : "block";
+        });
+
+        // Optional: click outside to close
+        window.addEventListener("click", function (e) {
+          if (!e.target.closest(".dropdown")) {
+            menu.style.display = "none";
+          }
+        });
+      </script>
+
+  </body>
+</html>

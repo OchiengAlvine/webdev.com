@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.navbar-links .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+.services h1 {
+  margin-top: 400px; /* Or whatever looks best with your layout */
+}
+
+.services p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+#service-rates {
+  background-color: #ffffff;
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 50px auto;
+  color: black;
+   border-radius: 20px;
+}
+
+/* Title Container */
+#service-rates .container {
+  max-width: 100%;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+
+}
+
+/* Heading */
+#service-rates h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/* Description Paragraph */
+#service-rates p {
+  color: #373f52;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Pricing Grid */
+#service-rates .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+  /* Add some padding so the vertical lines don’t overlap the content edges */
+  padding: 0px 1rem;
+}
+
+@media (min-width: 768px) {
+  #service-rates .grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+  }
+
+  /* Red divider lines between columns */
+  #service-rates .grid::before,
+  #service-rates .grid::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    width: 2px;
+    background-color: red;
+    z-index: 0;
+  }
+
+  #service-rates .grid::before {
+    left: 33.33%;
+    transform: translateX(-50%);
+  }
+
+  #service-rates .grid::after {
+    left: 66.66%;
+    transform: translateX(-50%);
+  }
+
+  /* Cards stay above the red lines */
+  #service-rates .card {
+    position: relative;
+    z-index: 1;
+  }
+} 
+
+/* Centered & Even Container */
+#maintenance-plan .container {
+  max-width: 640px;     /* A balanced, even width */
+  width: 35%;
+  margin: 0 auto;
+  margin-left: 540px;
+}
+
+/* Card Styling */
+#maintenance-plan .card {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 2rem;                /* Even internal spacing */
+  background-color: #ffffff;
+  width: 80%;                  
+  box-sizing: border-box;
+}
+
+
+/* Headings */
+#maintenance-plan h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  margin-left: 60px;
+}
+
+/* Pricing */
+#maintenance-plan p.text-2xl {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 60px;
+}
+
+/* List styling */
+#maintenance-plan ul {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.5;
+  padding-left: 0;
+  margin-left: 40px;
+}
+
+#maintenance-plan ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#maintenance-plan ul li::before {
+  content: "✔";
+  color: green;
+  margin-right: 0.5rem;
+}
+
+.services {
+  background-color: #000000; /* Dark background for contrast */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.section-title span {
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.frontend-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-block {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, border 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);
+}
+
+.service-block:hover {
+  transform: translateY(-5px);
+  border-color: red;
+}
+
+.service-block h3 {
+  color: #ff4d4d;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.service-block p {
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-callout {
+  background-color: #000000;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: -15px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 0; /* Remove default margin */
+  text-align: center;
+  color: white;
+  margin-top: 130px;
+}
+
+.section-title span {
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: center;
+  margin-top: 60px;
+}
